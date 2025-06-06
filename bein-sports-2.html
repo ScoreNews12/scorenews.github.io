@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Bein Sports 2 - Score News</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#181a20">
+  <link rel="icon" href="logo.png">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Score News Logo" style="height:48px;width:48px;vertical-align:middle;border-radius:50%;background:#23252b;">
+      Score News
+    </div>
+    <nav>
+      <a href="live-matches.html">Live Matches</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+  <main>
+    <section class="matches">
+      <h1>Bein Sports 2</h1>
+      <div class="bein-content">
+        <p style="text-align:center;font-size:1.2rem;">Welcome to Bein Sports 2 live stream page.</p>
+        <div class="iframe-container">
+          <iframe 
+            src="https://tt.en-yalla.live/albaplayer/sport2/" 
+            width="100%" 
+            height="600"
+            style="border: none; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); background: #181a20;"
+            allowfullscreen
+            loading="lazy"
+            title="Bein Sports 2 Live"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Score News
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+</body>
+</html>
